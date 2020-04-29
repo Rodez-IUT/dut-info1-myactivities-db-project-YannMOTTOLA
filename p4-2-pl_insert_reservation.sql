@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION gds.insert_reservation(une_date_debut timestamp without time zone,une_date_fin timestamp without time zone, 
+CREATE OR REPLACE FUNCTION gds.pl_insert_reservation(une_date_debut timestamp without time zone,une_date_fin timestamp without time zone, 
 un_nom_de_salle character varying(250)) RETURNS gds.reservation AS $$
 DECLARE 
  une_reservation gds.reservation%ROWTYPE;
